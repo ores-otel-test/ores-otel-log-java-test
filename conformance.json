@@ -1,15 +1,21 @@
 {
+  "capabilities": [
+    "record-schema",
+    "api-manifest",
+    "context-isolation",
+    "otel-explicit",
+    "no-monkey-patching",
+    "lifecycle",
+    "concurrency"
+  ],
   "language": "java",
-  "matrixVersion": "ores.otel.test-repository/v1",
   "name": "ores-otel-log-java-test",
-  "requireExactHeadChecks": true,
-  "requireNoMonkeyPatching": true,
   "runtime": "JDK 21 and 25",
   "sources": [
     "ores-otel/ores.otel.log",
     "ORESoftware/next-loggers.ts"
   ],
-  "status": "seeded",
+  "status": "planned",
   "testCommand": "mvn --batch-mode --no-transfer-progress verify",
   "toolchain": "Maven"
 }
