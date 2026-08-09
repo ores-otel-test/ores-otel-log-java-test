@@ -1,0 +1,15 @@
+{
+  "language": "java",
+  "matrixVersion": "ores.otel.test-repository/v1",
+  "name": "ores-otel-log-java-test",
+  "requireExactHeadChecks": true,
+  "requireNoMonkeyPatching": true,
+  "runtime": "JDK 21 and 25",
+  "sources": [
+    "ores-otel/ores.otel.log",
+    "ORESoftware/next-loggers.ts"
+  ],
+  "status": "seeded",
+  "testCommand": "mvn --batch-mode --no-transfer-progress verify",
+  "toolchain": "Maven"
+}
