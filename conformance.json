@@ -8,6 +8,10 @@
     "lifecycle",
     "concurrency"
   ],
+  "exactHeads": {
+    "canonical": "05f14768232b770dfc2bbe03f27b388f5a701c74",
+    "legacy": "05f14768232b770dfc2bbe03f27b388f5a701c74"
+  },
   "language": "java",
   "name": "ores-otel-log-java-test",
   "runtime": "JDK 21 and 25",
@@ -15,7 +19,7 @@
     "ores-otel/ores.otel.log",
     "ORESoftware/next-loggers.ts"
   ],
-  "status": "planned",
+  "status": "created",
   "testCommand": "mvn --batch-mode --no-transfer-progress verify",
   "toolchain": "Maven"
 }
