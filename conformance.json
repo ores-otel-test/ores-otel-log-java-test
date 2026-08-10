@@ -1,26 +1,15 @@
 {
-  "automatic_instrumentation": false,
-  "capabilities": [
-    "record-schema",
-    "api-manifest",
-    "context-isolation",
-    "otel-explicit",
-    "no-monkey-patching",
-    "lifecycle",
-    "concurrency"
-  ],
-  "exact_heads": {
-    "canonical": "be37556eeeaa77c2fc57feda96239b69cca8e9ac",
-    "legacy": "be37556eeeaa77c2fc57feda96239b69cca8e9ac"
-  },
   "language": "java",
-  "no_monkey_patching": true,
-  "repository": "ores-otel-test/ores-otel-log-java-test",
-  "runtime": "JDK 21+",
-  "schema_version": 1,
+  "matrixVersion": "ores.otel.test-repository/v1",
+  "name": "ores-otel-log-java-test",
+  "requireExactHeadChecks": true,
+  "requireNoMonkeyPatching": true,
+  "runtime": "JDK 21 and 25",
   "sources": [
     "ores-otel/ores.otel.log",
     "ORESoftware/next-loggers.ts"
   ],
-  "test_command": "bash sdk/java/test.sh"
+  "status": "seeded",
+  "testCommand": "mvn --batch-mode --no-transfer-progress verify",
+  "toolchain": "Maven"
 }
